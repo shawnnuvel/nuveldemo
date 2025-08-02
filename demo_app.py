@@ -1,325 +1,267 @@
-# streamlit_credible_demo_updated.py
+# streamlit_with_patents.py
 import streamlit as st
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
 
-# Page configuration
 st.set_page_config(
-    page_title="Nuvel.ai Talent Intelligence | Demo",
+    page_title="Nuvel.ai Intelligence | Demo",
     page_icon="🎯",
-    layout="wide",
-    initial_sidebar_state="expanded"
+    layout="wide"
 )
 
-# Custom CSS for professional styling
+# Custom CSS
 st.markdown("""
 <style>
-    .main-header {
-        font-size: 2.5rem;
-        font-weight: 700;
-        color: #1E40AF;
-        text-align: center;
-        margin-bottom: 1rem;
-    }
-    .value-prop {
-        font-size: 1.2rem;
-        color: #374151;
-        text-align: center;
-        margin-bottom: 2rem;
-    }
-    .data-scale {
-        background-color: #EBF8FF;
-        padding: 1rem;
-        border-radius: 8px;
-        border-left: 6px solid #3B82F6;
-        margin-bottom: 1.5rem;
-        font-weight: 500;
-    }
-    .disclaimer {
+    .patent-highlight {
         background-color: #FEF3C7;
         padding: 1rem;
         border-radius: 8px;
         border-left: 6px solid #F59E0B;
-        margin-bottom: 1.5rem;
-        font-size: 0.9rem;
+        margin: 1rem 0;
+    }
+    .killer-feature {
+        background-color: #ECFDF5;
+        padding: 1.5rem;
+        border-radius: 8px;
+        border-left: 6px solid #10B981;
+        margin: 1.5rem 0;
     }
 </style>
 """, unsafe_allow_html=True)
 
 @st.cache_data
-def load_data():
+def load_enhanced_data():
     try:
-        df = pd.read_csv('synthetic_demo_data.csv')
+        df = pd.read_csv('demo_with_patent_intelligence.csv')
         return df
     except FileNotFoundError:
-        st.error("❌ Credible demo data file not found. Please run the data preparation script.")
+        st.error("❌ Enhanced demo data not found. Run patent_integration.py first.")
         return None
 
 def main():
-    st.markdown('<h1 class="main-header">🎯 Nuvel.ai Talent Intelligence Platform</h1>', unsafe_allow_html=True)
-    st.markdown('<p class="value-prop">Investment-grade technical talent intelligence demonstrated on anonymous companies</p>', unsafe_allow_html=True)
-
-    # Updated messaging highlighting true data scale
+    st.title("🎯 Nuvel.ai Intelligence Platform")
+    st.markdown("*Investment-grade intelligence combining technical teams AND intellectual property*")
+    
+    # Killer feature highlight
     st.markdown("""
-    <div class="data-scale">
-    <strong>📊 Platform Scale:</strong> Our AI-powered platform analyzes <strong>over 300,000 companies</strong> from <strong>1.3+ million employment records</strong> 
-    with 41M+ total data points. This demo shows a small anonymized sample demonstrating our analytical methodology.
+    <div class="killer-feature">
+    <h3>🚀 Our Killer Feature: Patent + Talent Intelligence</h3>
+    <p><strong>Unique in the market:</strong> We combine technical team analysis with patent portfolio intelligence. 
+    See which companies have both strong engineering teams AND valuable IP portfolios.</p>
     </div>
     """, unsafe_allow_html=True)
-
-    # Disclaimer about estimated funding stages
-    st.markdown("""
-    <div class="disclaimer">
-    <strong>⚠️ Demo Disclaimer:</strong> Funding stages shown are <em>estimated based on company size</em> for demonstration purposes only. 
-    Company names are anonymized to maintain data confidentiality. The full platform includes verified metrics for household-name companies.
-    </div>
-    """, unsafe_allow_html=True)
-
-    df = load_data()
+    
+    df = load_enhanced_data()
     if df is None:
         return
-
-    # Key metrics
-    col1, col2, col3, col4 = st.columns(4)
+    
+    # Enhanced metrics with patent data
+    col1, col2, col3, col4, col5 = st.columns(5)
     
     with col1:
-        st.metric(
-            "Demo Companies", 
-            f"{len(df):,}",
-            help="Sample from 300,000+ company database"
-        )
-    
+        st.metric("Demo Companies", len(df))
     with col2:
-        st.metric(
-            "Technical Roles Mapped",
-            f"{df['engineer_count'].sum():,}",
-            help="Engineering roles classified using our algorithms"
-        )
-        
+        st.metric("Total Engineers", f"{df['engineer_count'].sum():,}")
     with col3:
-        st.metric(
-            "Avg Engineering Density", 
-            f"{df['engineering_percentage'].mean():.1f}%",
-            help="Average technical team concentration"
-        )
-        
+        st.metric("Total Patents", f"{df['patent_count'].sum():,}")
     with col4:
-        st.metric(
-            "Sectors Covered",
-            f"{df['sector'].nunique()}",
-            help="Technology sectors in demo dataset"
-        )
-
-    # Sidebar filters
+        st.metric("Avg Patents/Engineer", f"{df['patents_per_engineer'].mean():.2f}")
+    with col5:
+        st.metric("IP-Strong Companies", len(df[df['ip_strength_score'] >= 50]))
+    
+    # Patent data disclaimer
+    st.markdown("""
+    <div class="patent-highlight">
+    <strong>📊 Patent Data:</strong> This demo simulates our patent intelligence methodology. 
+    Our full platform analyzes <strong>658K+ patent-employment linkages</strong> across real companies.
+    </div>
+    """, unsafe_allow_html=True)
+    
+    # Sidebar filters (enhanced with patent filters)
     st.sidebar.title("🔍 Investment Filters")
     
-    # Sector filter
-    sectors = sorted(df['sector'].unique())
+    # Patent-specific filters
+    st.sidebar.subheader("🏆 Patent Intelligence Filters")
+    
+    patent_min = st.sidebar.slider(
+        "Minimum Patent Count",
+        min_value=0,
+        max_value=int(df['patent_count'].max()),
+        value=0,
+        help="Filter companies by patent portfolio size"
+    )
+    
+    ip_score_min = st.sidebar.slider(
+        "Minimum IP Strength Score",
+        min_value=0,
+        max_value=100,
+        value=30,
+        help="Filter by intellectual property strength"
+    )
+    
+    # Original filters
     selected_sectors = st.sidebar.multiselect(
         "Technology Sectors",
-        options=sectors,
-        default=sectors,
-        help="Filter companies by technology sector"
+        options=sorted(df['sector'].unique()),
+        default=sorted(df['sector'].unique())
     )
     
-    # Company size filter
     size_min, size_max = st.sidebar.slider(
-        "Company Size (Employees)",
+        "Company Size",
         min_value=int(df['total_employees'].min()),
         max_value=int(df['total_employees'].max()),
-        value=(10, 100),
-        help="Filter by company size for investment stage targeting"
+        value=(10, 100)
     )
     
-    # Engineering percentage filter
-    eng_min, eng_max = st.sidebar.slider(
-        "Engineering Team Density (%)",
-        min_value=int(df['engineering_percentage'].min()),
-        max_value=int(df['engineering_percentage'].max()),
-        value=(40, 85),
-        help="Filter by technical team concentration"
-    )
-    
-    # Funding stage filter with clear disclaimer
-    if 'funding_stage' in df.columns:
-        funding_stages = sorted(df['funding_stage'].unique())
-        selected_stages = st.sidebar.multiselect(
-            "Funding Stage (Estimated)",
-            options=funding_stages,
-            default=funding_stages,
-            help="⚠️ Estimated from company size - not verified data"
-        )
-    else:
-        selected_stages = []
-
     # Apply filters
     filtered_df = df[
+        (df['patent_count'] >= patent_min) &
+        (df['ip_strength_score'] >= ip_score_min) &
         (df['sector'].isin(selected_sectors)) &
         (df['total_employees'] >= size_min) &
-        (df['total_employees'] <= size_max) &
-        (df['engineering_percentage'] >= eng_min) &
-        (df['engineering_percentage'] <= eng_max)
+        (df['total_employees'] <= size_max)
     ]
     
-    if selected_stages and 'funding_stage' in df.columns:
-        filtered_df = filtered_df[filtered_df['funding_stage'].isin(selected_stages)]
-
     # Results section
-    st.header(f"🎯 Investment Targets: {len(filtered_df)} Companies")
+    st.header(f"🎯 IP-Enhanced Investment Targets: {len(filtered_df)} Companies")
     
     if len(filtered_df) == 0:
-        st.warning("No companies match your search criteria. Try adjusting the filters.")
+        st.warning("No companies match your criteria. Try adjusting filters.")
         return
-
-    # Summary metrics for filtered results
-    col1, col2, col3 = st.columns(3)
+    
+    # Enhanced summary metrics
+    col1, col2, col3, col4 = st.columns(4)
     with col1:
-        st.metric("Avg Engineering %", f"{filtered_df['engineering_percentage'].mean():.1f}%")
+        st.metric("Avg Investment Score", f"{filtered_df['investment_score'].mean():.1f}")
     with col2:
-        st.metric("Avg Company Size", f"{filtered_df['total_employees'].mean():.0f}")
+        st.metric("Avg Patents", f"{filtered_df['patent_count'].mean():.0f}")
     with col3:
-        st.metric("Total Engineers", f"{filtered_df['engineer_count'].sum():,}")
-
-    # Visualization
-    st.subheader("📈 Technical Talent Distribution")
+        st.metric("Avg IP Strength", f"{filtered_df['ip_strength_score'].mean():.1f}")
+    with col4:
+        st.metric("Total IP Value", f"{filtered_df['patent_count'].sum():,} patents")
+    
+    # Patent vs Talent visualization
+    st.subheader("📈 Patent Intelligence vs Technical Talent")
     
     fig = px.scatter(
         filtered_df,
-        x='total_employees',
-        y='engineering_percentage',
-        size='tech_strength_score',
+        x='engineering_percentage',
+        y='patent_count',
+        size='investment_score',
         color='sector',
-        hover_data=['company_name', 'engineer_count'],
-        title="Company Size vs Engineering Density by Sector",
+        hover_data=['company_name', 'ip_strength_score'],
+        title="Engineering Team % vs Patent Count by Sector",
         labels={
-            'total_employees': 'Total Employees',
             'engineering_percentage': 'Engineering Team %',
-            'sector': 'Sector'
-        },
-        height=500
+            'patent_count': 'Patent Count',
+            'investment_score': 'Investment Score'
+        }
     )
-    
-    fig.update_layout(
-        xaxis_title="Total Employees",
-        yaxis_title="Engineering Team %",
-        showlegend=True
-    )
-    
     st.plotly_chart(fig, use_container_width=True)
-
-    # Company results table
-    st.subheader("🏢 Company Results")
     
-    # Prepare display columns
-    display_columns = ['company_name', 'sector', 'total_employees', 'engineer_count', 'engineering_percentage', 'tech_strength_score']
-    if 'funding_stage' in filtered_df.columns:
-        display_columns.append('funding_stage')
-    if 'region' in filtered_df.columns:
-        display_columns.append('region')
+    # IP Strength distribution
+    st.subheader("🏆 IP Strength Distribution")
     
-    # Rename columns for display
-    display_df = filtered_df[display_columns].copy()
-    column_names = ['Company', 'Sector', 'Employees', 'Engineers', 'Eng %', 'Tech Score']
-    if 'funding_stage' in filtered_df.columns:
-        column_names.append('Funding Stage*')
-    if 'region' in filtered_df.columns:
-        column_names.append('Region')
+    fig2 = px.histogram(
+        filtered_df,
+        x='ip_strength_score',
+        nbins=20,
+        title="Distribution of IP Strength Scores",
+        color='sector'
+    )
+    st.plotly_chart(fig2, use_container_width=True)
     
-    display_df.columns = column_names
+    # Enhanced company table
+    st.subheader("🏢 Companies with Patent Intelligence")
     
-    # Sort by tech strength score
-    display_df = display_df.sort_values('Tech Score', ascending=False)
+    display_cols = ['company_name', 'sector', 'total_employees', 'engineer_count', 
+                   'patent_count', 'patents_per_engineer', 'ip_strength_score', 'investment_score']
     
-    st.dataframe(display_df, use_container_width=True, height=400)
+    results_df = filtered_df[display_cols].sort_values('investment_score', ascending=False)
+    results_df.columns = ['Company', 'Sector', 'Employees', 'Engineers', 
+                         'Patents', 'Patents/Eng', 'IP Score', 'Investment Score']
     
-    if 'Funding Stage*' in display_df.columns:
-        st.caption("*Funding stages are estimated based on company size")
-
-    # Company deep-dive section
-    st.subheader("🔍 Company Intelligence Deep-Dive")
+    st.dataframe(results_df, use_container_width=True)
+    
+    # Company deep-dive with patent analysis
+    st.subheader("🔍 IP-Enhanced Company Analysis")
     
     selected_company = st.selectbox(
-        "Select company for detailed analysis:",
-        options=filtered_df['company_name'].tolist(),
-        help="Choose a company to see detailed technical intelligence"
+        "Select company for patent + talent analysis:",
+        options=filtered_df['company_name'].tolist()
     )
     
     if selected_company:
-        company_data = filtered_df[filtered_df['company_name'] == selected_company].iloc[0]
+        company = filtered_df[filtered_df['company_name'] == selected_company].iloc[0]
         
-        st.markdown("---")
+        st.markdown(f"### 📋 {selected_company} - Complete Intelligence Profile")
         
-        # Company profile
-        col1, col2 = st.columns([2, 1])
+        # Enhanced metrics with patents
+        col1, col2, col3, col4, col5 = st.columns(5)
         
         with col1:
-            st.markdown(f"### 📋 {selected_company}")
-            
-            # Metrics row
-            metric_col1, metric_col2, metric_col3, metric_col4 = st.columns(4)
-            
-            with metric_col1:
-                st.metric("Total Employees", f"{int(company_data['total_employees'])}")
-            with metric_col2:
-                st.metric("Engineers", f"{int(company_data['engineer_count'])}")
-            with metric_col3:
-                st.metric("Engineering %", f"{company_data['engineering_percentage']:.1f}%")
-            with metric_col4:
-                st.metric("Tech Score", f"{company_data['tech_strength_score']:.0f}/100")
-        
+            st.metric("Employees", int(company['total_employees']))
         with col2:
-            # Company details
-            st.info(f"**Sector:** {company_data['sector']}")
-            if 'funding_stage' in company_data:
-                st.info(f"**Funding Stage:** {company_data['funding_stage']} (estimated)")
-            if 'region' in company_data:
-                st.info(f"**Region:** {company_data['region']}")
+            st.metric("Engineers", int(company['engineer_count']))
+        with col3:
+            st.metric("Patents", int(company['patent_count']))
+        with col4:
+            st.metric("IP Strength", f"{company['ip_strength_score']:.0f}/100")
+        with col5:
+            st.metric("Investment Score", f"{company['investment_score']:.0f}/100")
         
-        # Investment suitability analysis
-        st.markdown("#### 💰 Investment Analysis")
+        # Patent analysis
+        st.markdown("#### 🏆 Patent Portfolio Analysis")
         
-        if company_data['total_employees'] <= 50:
-            st.success("✅ **VC Investment Profile**: Suitable for Series A/B investment")
-        elif company_data['total_employees'] <= 150:
-            st.info("ℹ️ **PE Acquisition Profile**: Suitable for growth capital or buyout")
+        if company['patent_count'] > 20:
+            st.success(f"🔥 **Strong IP Portfolio**: {company['patent_count']} patents indicates significant R&D investment")
+        elif company['patent_count'] > 5:
+            st.info(f"⚡ **Growing IP Portfolio**: {company['patent_count']} patents shows innovation focus")
         else:
-            st.warning("⚠️ **Large Company**: May require partnership approach")
+            st.warning(f"📊 **Limited IP Portfolio**: {company['patent_count']} patents may indicate early stage")
         
-        # Technical team insights
-        if company_data['engineering_percentage'] >= 60:
-            st.success(f"🔥 **High Technical Density**: {company_data['engineering_percentage']:.1f}% engineering team indicates strong execution capability")
-        elif company_data['engineering_percentage'] >= 40:
-            st.info(f"⚡ **Balanced Technical Team**: {company_data['engineering_percentage']:.1f}% engineering concentration suggests solid technical foundation")
-
+        if company['patents_per_engineer'] > 0.5:
+            st.success(f"💎 **High Innovation Density**: {company['patents_per_engineer']:.2f} patents per engineer")
+        
+        st.info(f"**Primary Patent Focus**: {company['primary_patent_focus']}")
+        
+        # Investment recommendation
+        st.markdown("#### 💰 Investment Recommendation")
+        
+        if company['investment_score'] >= 80:
+            st.success("🚀 **STRONG BUY**: Excellent combination of technical talent and IP portfolio")
+        elif company['investment_score'] >= 60:
+            st.info("📈 **BUY**: Good balance of engineering team and patent assets")
+        else:
+            st.warning("📊 **HOLD**: Consider for strategic value or growth potential")
+    
     # Call to action
     st.markdown("---")
-    st.header("🚀 Ready for Full Platform Access?")
+    st.header("🚀 Ready for Full Patent + Talent Intelligence?")
     
     col1, col2 = st.columns([2, 1])
     
     with col1:
         st.markdown("""
-        ### What you get with the full platform:
+        ### Exclusive IP + Talent Intelligence Platform:
         
-        ✅ **300,000+ companies** with verified employment data  
-        ✅ **1.3M+ employment records** with comprehensive analysis  
-        ✅ **Real company names** including household tech brands  
-        ✅ **Advanced search** with 20+ filters and custom criteria  
+        ✅ **658K+ patent-employment linkages** analyzed  
+        ✅ **300K+ companies** with verified technical teams AND patent portfolios  
+        ✅ **Real patent data** including citations, classifications, and inventor networks  
+        ✅ **Investment scoring** combining talent density with IP strength  
+        ✅ **Competitive moats analysis** showing patent overlap between companies  
         ✅ **API access** for integration with your deal flow systems  
-        ✅ **Custom reports** for specific sectors and investment theses  
         
-        **This demo represents <5% of our total analytical capability.**
+        **This combination is impossible for competitors to replicate.**
         """)
     
     with col2:
-        st.markdown("### 📧 Contact for Demo")
-        
         st.markdown("""
-        <div style='background-color: #F0F9FF; padding: 1.5rem; border-radius: 8px; text-align: center;'>
-        <h4>Ready to see the full platform?</h4>
-        <p>Email us at <a href='mailto:hello@nuvel.ai' style='color: #2563EB; font-weight: bold;'>hello@nuvel.ai</a> to schedule your personalized demo.</p>
-        <p style='font-size: 0.9rem; color: #6B7280;'>See verified data for 300,000+ companies with real-time technical intelligence.</p>
+        <div style='background-color: #F0FDF4; padding: 1.5rem; border-radius: 8px; text-align: center;'>
+        <h4>🏆 Killer Feature Access</h4>
+        <p>Email <a href='mailto:hello@nuvel.ai' style='color: #059669; font-weight: bold;'>hello@nuvel.ai</a> for exclusive patent + talent intelligence.</p>
+        <p style='font-size: 0.9rem; color: #6B7280;'>See which companies have both strong engineering teams AND valuable IP portfolios.</p>
         </div>
         """, unsafe_allow_html=True)
 

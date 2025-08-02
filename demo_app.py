@@ -253,7 +253,7 @@ def main():
         ✅ **Competitive moats analysis** showing patent overlap between companies  
         ✅ **API access** for integration with your deal flow systems  
         
-        **This combination is impossible for competitors to replicate.**
+    
         """)
     
     with col2:

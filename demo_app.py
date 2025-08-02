@@ -50,7 +50,7 @@ st.markdown("""
 @st.cache_data
 def load_data():
     try:
-        df = pd.read_csv('credible_demo.csv')
+        df = pd.read_csv('synthetic_demo_data.csv')
         return df
     except FileNotFoundError:
         st.error("❌ Credible demo data file not found. Please run the data preparation script.")

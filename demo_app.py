@@ -6,7 +6,7 @@ import plotly.graph_objects as go
 
 # Page configuration
 st.set_page_config(
-    page_title="Technical Talent Intelligence | Credible Demo",
+    page_title="Nuvel.ai Talent Intelligence | Demo",
     page_icon="🎯",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -57,13 +57,13 @@ def load_data():
         return None
 
 def main():
-    st.markdown('<h1 class="main-header">🎯 Technical Talent Intelligence Platform</h1>', unsafe_allow_html=True)
+    st.markdown('<h1 class="main-header">🎯 Nuvel.ai Talent Intelligence Platform</h1>', unsafe_allow_html=True)
     st.markdown('<p class="value-prop">Investment-grade technical talent intelligence demonstrated on anonymous companies</p>', unsafe_allow_html=True)
 
     # Updated messaging highlighting true data scale
     st.markdown("""
     <div class="data-scale">
-    <strong>📊 Platform Scale:</strong> Our platform analyzes <strong>over 300,000 companies</strong> from <strong>1.3+ million employment records</strong> 
+    <strong>📊 Platform Scale:</strong> Our AI-powered platform analyzes <strong>over 300,000 companies</strong> from <strong>1.3+ million employment records</strong> 
     with 41M+ total data points. This demo shows a small anonymized sample demonstrating our analytical methodology.
     </div>
     """, unsafe_allow_html=True)

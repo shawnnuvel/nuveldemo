@@ -80,12 +80,21 @@ st.markdown("""
 @st.cache_data
 def load_demo_data():
     # This would load from your generated JSON/CSV files
-    return {
-        'companies': pd.read_csv('synthetic_companies.csv'),
-        'stealth': pd.read_csv('synthetic_stealth.csv'),
-        'patents': pd.read_csv('synthetic_patents.csv'),
-        'patterns': pd.read_csv('synthetic_patterns.csv')
-    }
+    try:
+        return {
+            'companies': pd.read_csv('synthetic_companies.csv'),
+            'stealth': pd.read_csv('synthetic_stealth.csv'),
+            'patents': pd.read_csv('synthetic_patents.csv'),
+            'patterns': pd.read_csv('synthetic_patterns.csv')
+        }
+    except:
+        # Return empty dataframes if files don't exist
+        return {
+            'companies': pd.DataFrame(),
+            'stealth': pd.DataFrame(),
+            'patents': pd.DataFrame(),
+            'patterns': pd.DataFrame()
+        }
 
 # Initialize session state
 if 'selected_company' not in st.session_state:
@@ -459,7 +468,7 @@ st.markdown("""
 <div style='text-align: center; color: #666; padding: 20px;'>
     <p>This is a demo of Nuvel.ai's Technical Intelligence Platform</p>
     <p><strong>Real platform includes:</strong> 319K+ companies • 372M profiles • 1.8M patents • 3K+ stealth startups</p>
-    <p>📧 Contact: hello@nuvel.ai 
+    <p>📧 Contact: hello@nuvel.ai</p>
 </div>
 """, unsafe_allow_html=True)
 

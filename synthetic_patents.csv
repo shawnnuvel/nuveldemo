@@ -1,0 +1,456 @@
+company,holder_name,holder_role,patent_domain,patent_count,citations,filed_year,previous_company
+NeuralVentures,Shelley Johnson,Senior Engineer,Hardware,3,35,2023,Google
+NeuralVentures,Christina King,Senior Engineer,Machine Learning,5,23,2018,Microsoft
+NeuralVentures,Kayla Marquez,Staff Engineer,Hardware,4,6,2024,Google
+NeuralVentures,Gregory Reese,Principal Engineer,Distributed Systems,4,5,2023,Google
+NeuralVentures,Douglas Walter,Principal Engineer,Distributed Systems,4,3,2024,Microsoft
+NeuralSolutions,Laurie Fisher,Staff Engineer,Distributed Systems,1,2,2021,Google
+NeuralSolutions,Nancy Mckinney,CTO,Networking,3,43,2018,Google
+NeuralSolutions,Alexis Nelson,CTO,Security,1,32,2022,Apple
+NeuralSolutions,Stephen Cole MD,Principal Engineer,Algorithms,3,14,2024,Meta
+QuantumSolutions,Vernon Le,CTO,Data Processing,5,35,2022,Meta
+QuantumSolutions,Robert Moore,CTO,Security,2,38,2020,Apple
+QuantumSolutions,Annette Dixon,CTO,Hardware,1,26,2024,Google
+QuantumSolutions,William Lucas,Staff Engineer,Data Processing,2,19,2024,Microsoft
+QuantumSolutions,Ian Cooper,Senior Engineer,Distributed Systems,1,2,2020,Apple
+QuantumSolutions,Harold Cruz,Senior Engineer,Distributed Systems,3,49,2022,Microsoft
+QuantumSolutions,Caleb Miller,CTO,Distributed Systems,2,4,2021,Apple
+DataVentures,Cindy Carter,Staff Engineer,Hardware,3,28,2020,Microsoft
+DataVentures,Joseph Ramirez,Staff Engineer,Security,2,26,2022,Google
+NeuralVentures,Danielle Young,CTO,Hardware,3,34,2021,Google
+NeuralVentures,Robin Brown,CTO,Data Processing,2,37,2022,Meta
+NeuralVentures,Stacey Thompson,Principal Engineer,Security,5,32,2019,Microsoft
+NeuralVentures,Hannah Richards,Principal Engineer,Distributed Systems,3,14,2021,Apple
+NeuralVentures,Sharon Jimenez,CTO,Distributed Systems,5,3,2020,Apple
+NeuralVentures,Michelle White,Senior Engineer,Data Processing,4,17,2023,Google
+NeuralVentures,Andrea Banks,CTO,Security,4,39,2020,Apple
+NeuralVentures,John Flores,Senior Engineer,Security,4,10,2019,Microsoft
+NeuralWorks,Jay Manning,Staff Engineer,Algorithms,1,38,2018,Microsoft
+NeuralWorks,Jeffrey Pierce,Principal Engineer,Hardware,3,6,2018,Amazon
+SmartSolutions,Brian Porter,Principal Engineer,Algorithms,1,42,2022,Google
+AIWorks,Joanna Young,Staff Engineer,Machine Learning,1,6,2021,Microsoft
+CloudSolutions,Ashley Nichols,CTO,Machine Learning,5,43,2018,Meta
+CloudSolutions,Daniel Hunt,Principal Engineer,Hardware,3,45,2021,Amazon
+CloudSolutions,Mr. Andrew Williams,Senior Engineer,Algorithms,2,10,2023,Google
+CloudSolutions,Miguel Steele,CTO,Algorithms,5,23,2019,Apple
+CloudSolutions,Tina Sullivan,Principal Engineer,Algorithms,1,43,2019,Google
+CloudSolutions,Dr. Rebecca Taylor,Senior Engineer,Algorithms,2,11,2021,Apple
+CloudSolutions,Michele Leonard PhD,Principal Engineer,Hardware,1,0,2019,Amazon
+CloudSolutions,Cheryl Combs,Senior Engineer,Machine Learning,3,7,2020,Meta
+CloudSolutions,Catherine Wilson,Staff Engineer,Security,5,16,2021,Microsoft
+MetaSolutions,Monique Carpenter,Principal Engineer,Machine Learning,4,18,2018,Amazon
+MetaSolutions,Amy Saunders PhD,Senior Engineer,Hardware,4,45,2019,Meta
+MetaSolutions,Richard Avery,CTO,Networking,5,3,2020,Microsoft
+MetaSolutions,Brooke Willis,Principal Engineer,Algorithms,1,14,2023,Google
+SmartLabs,Mr. Dylan Manning,Senior Engineer,Machine Learning,4,18,2023,Microsoft
+SmartLabs,Christy Miles,Staff Engineer,Security,1,13,2023,Microsoft
+DataTechnologies,Anthony Gomez,Senior Engineer,Machine Learning,3,22,2019,Google
+DataSystems,Christopher Sims,Staff Engineer,Data Processing,1,32,2022,Apple
+DataSystems,Ariel Smith,Senior Engineer,Machine Learning,5,19,2023,Microsoft
+SmartLabs,Gary Lopez,Senior Engineer,Distributed Systems,3,39,2022,Meta
+SmartLabs,Tina Cantu,Principal Engineer,Security,2,23,2023,Microsoft
+NextWorks,Sharon Pace,Principal Engineer,Distributed Systems,1,23,2021,Google
+NextWorks,Christine Myers,Senior Engineer,Machine Learning,4,31,2022,Microsoft
+QuantumLabs,Shelly Chavez,Senior Engineer,Algorithms,1,25,2022,Amazon
+QuantumLabs,James Allen,Senior Engineer,Machine Learning,5,24,2023,Amazon
+QuantumSolutions,Steven Harris,CTO,Security,1,49,2023,Meta
+QuantumSolutions,Gabriel Ball,CTO,Networking,3,44,2023,Meta
+NeuralLabs,Mr. Timothy Young,Staff Engineer,Algorithms,2,36,2024,Apple
+QuantumLabs,Steven Arroyo,Principal Engineer,Networking,3,14,2018,Google
+MetaDynamics,Stephanie Greene,CTO,Data Processing,4,24,2024,Meta
+MetaDynamics,Allen Murphy,Principal Engineer,Security,1,13,2019,Apple
+MetaDynamics,Amy Zimmerman,Senior Engineer,Machine Learning,4,13,2021,Apple
+MetaDynamics,Samantha Odom,Principal Engineer,Distributed Systems,4,11,2020,Google
+CloudTechnologies,Morgan Jackson,CTO,Networking,3,11,2022,Google
+CloudTechnologies,Tiffany Adams,Staff Engineer,Algorithms,5,44,2024,Meta
+AIVentures,Joshua Rodriguez,Staff Engineer,Hardware,2,19,2020,Google
+AIVentures,Lori Adkins,Senior Engineer,Machine Learning,1,36,2018,Amazon
+AIVentures,Timothy Vaughn,Senior Engineer,Security,2,0,2023,Microsoft
+MetaDynamics,Brianna Carroll,CTO,Networking,3,15,2018,Meta
+MetaDynamics,Ashley Aguilar,Senior Engineer,Machine Learning,4,25,2021,Meta
+DeepWorks,Cheryl Stevenson,Staff Engineer,Networking,1,18,2023,Apple
+DeepWorks,Sean Morton,CTO,Security,5,35,2024,Microsoft
+TechSystems,Bonnie Alvarez,CTO,Security,5,11,2018,Meta
+TechSystems,David Clements,CTO,Security,2,25,2018,Meta
+TechSystems,Tiffany Clarke,Staff Engineer,Data Processing,2,0,2023,Meta
+AISolutions,Natalie Smith,CTO,Security,3,33,2019,Google
+AISolutions,Maria Sanchez,Principal Engineer,Data Processing,4,1,2023,Microsoft
+AISolutions,Melissa Williams,Staff Engineer,Machine Learning,4,7,2018,Apple
+AISolutions,Melissa Bond,Staff Engineer,Distributed Systems,5,0,2019,Meta
+AISolutions,Jennifer Hahn,CTO,Algorithms,2,6,2023,Microsoft
+AISolutions,Christina Hernandez,Staff Engineer,Machine Learning,3,33,2024,Google
+AISolutions,Michael Rocha,CTO,Algorithms,1,43,2020,Microsoft
+AISolutions,Nicholas Garza,Senior Engineer,Data Processing,1,49,2018,Microsoft
+AISolutions,Lori Mendez,CTO,Distributed Systems,5,23,2020,Microsoft
+AISolutions,Bryan Johnson,Senior Engineer,Algorithms,5,20,2022,Amazon
+NextWorks,David Sexton,CTO,Distributed Systems,1,24,2022,Microsoft
+NextWorks,Leslie Green,Senior Engineer,Algorithms,1,48,2024,Apple
+NextWorks,Courtney Nguyen,Staff Engineer,Data Processing,5,48,2024,Microsoft
+NextWorks,Brittney Tran,Staff Engineer,Machine Learning,5,24,2022,Meta
+DeepTechnologies,Valerie Santana,CTO,Distributed Systems,5,17,2020,Apple
+DeepTechnologies,Larry Patton,Senior Engineer,Algorithms,1,32,2019,Meta
+DeepTechnologies,Tracey Hunter,CTO,Distributed Systems,1,3,2019,Microsoft
+TechVentures,Jade Ball,Staff Engineer,Networking,3,34,2019,Meta
+TechVentures,Wesley Reese,Staff Engineer,Algorithms,2,3,2020,Google
+TechVentures,Christopher Lee,Principal Engineer,Security,4,17,2023,Meta
+TechSystems,Jeffrey Robinson,Staff Engineer,Algorithms,5,47,2018,Google
+AIVentures,Stephanie Silva,CTO,Security,5,38,2023,Meta
+AIVentures,Victoria Kelly,Senior Engineer,Algorithms,2,47,2023,Google
+AIVentures,Mark Sims,Staff Engineer,Machine Learning,2,3,2020,Meta
+AIVentures,Isaiah Berg,Staff Engineer,Hardware,2,8,2023,Amazon
+AIVentures,Vincent Underwood,CTO,Security,2,44,2018,Meta
+AIVentures,James Lynn,Principal Engineer,Algorithms,2,2,2024,Meta
+AIVentures,Amber Thomas,Senior Engineer,Data Processing,3,3,2021,Apple
+AIVentures,James Shaw,CTO,Distributed Systems,1,43,2024,Google
+AIVentures,Dominique Henderson DDS,Principal Engineer,Algorithms,5,14,2024,Amazon
+AIVentures,Lacey Gomez,CTO,Data Processing,3,25,2022,Google
+QuantumTechnologies,Sean Salazar,Staff Engineer,Distributed Systems,1,43,2018,Meta
+QuantumTechnologies,Steven Ellis,Senior Engineer,Data Processing,1,30,2020,Amazon
+QuantumTechnologies,Miss Anna Yang,Senior Engineer,Hardware,2,37,2023,Microsoft
+QuantumTechnologies,Hannah White,Staff Engineer,Machine Learning,1,16,2019,Microsoft
+QuantumTechnologies,Jose Thomas,Principal Engineer,Machine Learning,5,24,2021,Meta
+TechLabs,Trevor Jacobs,Staff Engineer,Networking,1,12,2018,Amazon
+TechLabs,Stephen Jimenez,CTO,Machine Learning,5,3,2020,Amazon
+TechLabs,Amy Washington,Principal Engineer,Hardware,4,25,2021,Google
+TechLabs,John Jordan,CTO,Distributed Systems,4,9,2018,Microsoft
+TechLabs,Peter Lewis,CTO,Security,3,3,2020,Microsoft
+TechLabs,William Guzman,Principal Engineer,Hardware,3,19,2023,Google
+TechLabs,Bradley Frazier,CTO,Data Processing,4,12,2023,Apple
+TechLabs,Tracy Richards,Staff Engineer,Algorithms,2,36,2021,Apple
+TechLabs,Jason Hess,Senior Engineer,Security,5,24,2019,Amazon
+DeepDynamics,Nicole Collins,Staff Engineer,Distributed Systems,2,24,2019,Amazon
+DeepDynamics,Eric Lucero,Senior Engineer,Machine Learning,3,9,2020,Meta
+QuantumSolutions,Carolyn Aguilar,CTO,Algorithms,2,47,2020,Microsoft
+QuantumSolutions,Virginia Mccarty,Principal Engineer,Security,2,6,2023,Microsoft
+QuantumSolutions,Tiffany Hartman,Senior Engineer,Networking,4,38,2023,Microsoft
+QuantumSolutions,James Gutierrez,Senior Engineer,Algorithms,5,26,2019,Meta
+QuantumSolutions,Alexandra Williams,Principal Engineer,Hardware,1,42,2022,Microsoft
+QuantumSolutions,Diane Moore,CTO,Security,2,12,2022,Apple
+QuantumSolutions,Anthony Roberts,Staff Engineer,Distributed Systems,3,29,2019,Apple
+QuantumSolutions,Brian Estes,Senior Engineer,Security,5,15,2019,Meta
+QuantumSolutions,Nancy Harrison,Principal Engineer,Distributed Systems,1,44,2019,Google
+MetaTechnologies,Allen Reid,Senior Engineer,Algorithms,3,42,2022,Amazon
+NextVentures,Daniel Bridges,CTO,Machine Learning,3,46,2020,Apple
+NextVentures,Matthew Hodges,CTO,Hardware,4,44,2022,Apple
+NextVentures,Timothy Roth,CTO,Security,4,25,2022,Apple
+NextVentures,William Mcguire,Principal Engineer,Distributed Systems,3,15,2021,Apple
+CloudSolutions,Kathryn Ferguson,CTO,Hardware,3,25,2021,Microsoft
+QuantumVentures,Scott Doyle,CTO,Hardware,1,27,2019,Apple
+QuantumVentures,Bradley Smith,Staff Engineer,Machine Learning,2,21,2020,Apple
+QuantumVentures,Christina Bradley,Senior Engineer,Networking,1,36,2020,Microsoft
+QuantumVentures,Christopher Stewart,Principal Engineer,Networking,1,21,2019,Amazon
+QuantumVentures,Joshua Nelson,Staff Engineer,Security,3,36,2021,Amazon
+QuantumVentures,Susan White,Principal Engineer,Hardware,4,11,2018,Meta
+QuantumVentures,Alicia Simpson,Senior Engineer,Data Processing,3,8,2019,Apple
+QuantumTechnologies,Thomas Taylor,Senior Engineer,Security,2,24,2018,Apple
+QuantumTechnologies,Amber Clark,Senior Engineer,Algorithms,3,41,2022,Microsoft
+CloudSolutions,Frank Woods,Staff Engineer,Distributed Systems,2,26,2024,Google
+CloudSolutions,Dawn Sanchez,Principal Engineer,Hardware,3,19,2019,Google
+CloudSolutions,William Schultz DDS,CTO,Networking,4,14,2023,Amazon
+CloudSolutions,Patrick Powell,Staff Engineer,Machine Learning,1,1,2022,Google
+CloudSolutions,Pamela Sparks,CTO,Networking,3,10,2019,Google
+MetaVentures,Victoria Cuevas,Senior Engineer,Security,5,28,2018,Microsoft
+MetaVentures,Michael Sims,Principal Engineer,Security,2,13,2020,Apple
+CloudAnalytics,Roger Crawford,Staff Engineer,Data Processing,5,29,2020,Apple
+CloudAnalytics,Timothy Hernandez,CTO,Machine Learning,1,31,2019,Meta
+AIVentures,Anthony Webb,Senior Engineer,Algorithms,5,26,2024,Apple
+TechAnalytics,Kim Richmond MD,Staff Engineer,Distributed Systems,4,29,2021,Meta
+TechAnalytics,Cindy Landry,CTO,Data Processing,3,26,2019,Meta
+TechAnalytics,Autumn Aguirre,CTO,Machine Learning,1,17,2018,Google
+NeuralSystems,Elizabeth Watkins,Principal Engineer,Hardware,2,28,2022,Google
+DataWorks,Angel Ball,Senior Engineer,Security,3,41,2022,Google
+MetaAnalytics,Kathy Davis,Senior Engineer,Machine Learning,2,30,2024,Meta
+MetaTechnologies,Dr. Sarah Patterson,Staff Engineer,Machine Learning,3,11,2020,Amazon
+MetaTechnologies,Ashley Garcia,Staff Engineer,Machine Learning,4,1,2022,Apple
+MetaTechnologies,Jason Williams,Staff Engineer,Networking,1,49,2019,Amazon
+MetaTechnologies,Paula Scott,Senior Engineer,Data Processing,2,2,2019,Google
+MetaTechnologies,Allen Brown,Staff Engineer,Data Processing,5,22,2020,Meta
+TechVentures,Curtis Cabrera,CTO,Distributed Systems,1,38,2023,Meta
+TechVentures,Vanessa Parks,CTO,Hardware,2,22,2019,Apple
+TechVentures,Charles Reese,Principal Engineer,Hardware,2,15,2019,Meta
+TechVentures,Sharon Hunt,Staff Engineer,Algorithms,4,14,2023,Microsoft
+TechVentures,Robert Morgan,Staff Engineer,Networking,5,38,2019,Google
+TechVentures,Brittany Singh,Principal Engineer,Security,4,44,2023,Meta
+TechVentures,Kelly Kelly,Principal Engineer,Distributed Systems,2,14,2021,Amazon
+TechVentures,Jamie Gutierrez,Senior Engineer,Networking,3,2,2021,Amazon
+TechVentures,Scott Scott,Senior Engineer,Machine Learning,5,29,2018,Microsoft
+TechVentures,Henry Lopez,Staff Engineer,Data Processing,5,31,2024,Google
+TechVentures,Michael Harper,Staff Engineer,Hardware,2,24,2018,Google
+TechVentures,Kent Lopez,Senior Engineer,Data Processing,1,9,2021,Google
+DataDynamics,Marc Taylor,Principal Engineer,Algorithms,5,14,2022,Microsoft
+DataDynamics,Brooke Weiss,Staff Engineer,Algorithms,1,31,2023,Amazon
+DataDynamics,Charles Cook,Principal Engineer,Networking,3,49,2021,Amazon
+DataDynamics,Tracy Miller MD,Staff Engineer,Security,4,48,2020,Meta
+DataDynamics,Amy Cline,Staff Engineer,Distributed Systems,2,44,2019,Meta
+DataDynamics,Matthew Harper,Staff Engineer,Algorithms,5,1,2023,Google
+DataDynamics,Matthew Lewis,Principal Engineer,Security,2,22,2022,Microsoft
+DataDynamics,Denise Kent,Staff Engineer,Algorithms,2,11,2023,Apple
+DataDynamics,Lisa Martinez,CTO,Machine Learning,4,11,2024,Microsoft
+DataDynamics,Rachel Mann,Principal Engineer,Distributed Systems,3,41,2018,Amazon
+DataDynamics,Courtney Smith,Staff Engineer,Hardware,4,15,2018,Google
+DataDynamics,Michael Jackson,Senior Engineer,Security,4,43,2024,Amazon
+DataDynamics,Eugene Galloway,Principal Engineer,Machine Learning,2,0,2021,Apple
+DataDynamics,James Spencer,Staff Engineer,Hardware,5,19,2024,Google
+DataDynamics,Caleb Collins,Principal Engineer,Distributed Systems,1,42,2018,Meta
+DataDynamics,Andrew Whitaker,CTO,Distributed Systems,4,42,2018,Microsoft
+QuantumLabs,Logan Cabrera,Principal Engineer,Algorithms,4,14,2022,Amazon
+QuantumLabs,Eric Perry,Principal Engineer,Data Processing,1,20,2023,Apple
+QuantumLabs,Kathleen Baker,CTO,Machine Learning,3,20,2020,Microsoft
+QuantumLabs,Daniel Rodriguez,Senior Engineer,Hardware,2,40,2023,Google
+QuantumLabs,Lynn Erickson,Principal Engineer,Machine Learning,4,46,2020,Google
+QuantumLabs,Colin Santos,Senior Engineer,Networking,3,21,2021,Apple
+QuantumLabs,Megan Price,Senior Engineer,Networking,1,36,2023,Amazon
+QuantumLabs,Curtis Young,Staff Engineer,Networking,3,28,2022,Amazon
+QuantumLabs,Monica Johnson,Principal Engineer,Hardware,2,3,2021,Google
+QuantumLabs,Kimberly Burke,Staff Engineer,Machine Learning,3,10,2021,Meta
+SmartDynamics,Collin Richardson,Senior Engineer,Machine Learning,5,41,2021,Google
+SmartDynamics,Matthew Schmidt,Staff Engineer,Algorithms,1,9,2020,Google
+QuantumTechnologies,Victoria Solis,Staff Engineer,Networking,2,48,2023,Amazon
+QuantumTechnologies,Austin Lewis,CTO,Data Processing,5,36,2023,Amazon
+QuantumTechnologies,Mary Jones,CTO,Machine Learning,5,33,2021,Meta
+QuantumTechnologies,Kristy Davis,Senior Engineer,Distributed Systems,4,31,2021,Meta
+QuantumTechnologies,Adam Kelly,Senior Engineer,Hardware,5,49,2019,Meta
+QuantumTechnologies,Mackenzie Perez,CTO,Algorithms,4,43,2024,Google
+QuantumTechnologies,Barbara Bruce,CTO,Security,5,33,2022,Microsoft
+QuantumTechnologies,Laura Hubbard,CTO,Algorithms,5,26,2020,Meta
+QuantumTechnologies,Holly Tate,Staff Engineer,Algorithms,5,44,2023,Apple
+QuantumTechnologies,Crystal Smith,Staff Engineer,Machine Learning,5,5,2023,Amazon
+QuantumTechnologies,Stephanie Gonzalez,Principal Engineer,Security,2,1,2022,Microsoft
+QuantumTechnologies,Timothy Smith,Principal Engineer,Distributed Systems,2,7,2019,Google
+DataSolutions,Charlene Alvarez,Staff Engineer,Machine Learning,5,4,2020,Google
+DataSolutions,Jeremy Hood,Principal Engineer,Data Processing,4,17,2020,Microsoft
+DataSolutions,Jillian Robinson,CTO,Hardware,3,30,2018,Google
+DataSolutions,Amanda Howe,Senior Engineer,Distributed Systems,4,35,2021,Amazon
+DataSolutions,Paul Becker,Principal Engineer,Security,5,42,2024,Amazon
+DataSolutions,Elizabeth Webb,CTO,Data Processing,3,36,2021,Microsoft
+DataSolutions,Crystal Oliver,CTO,Security,1,26,2024,Meta
+DataSolutions,Lacey Stewart,CTO,Security,4,44,2018,Apple
+DataSolutions,Sharon Shelton,Principal Engineer,Machine Learning,1,26,2019,Apple
+DataSolutions,Stacy Morris,Principal Engineer,Algorithms,2,30,2019,Google
+DataSolutions,Edward Wilson,CTO,Security,5,27,2022,Meta
+DeepAnalytics,Lisa Contreras,CTO,Data Processing,1,7,2023,Microsoft
+DeepAnalytics,James Williams,Principal Engineer,Distributed Systems,5,44,2021,Meta
+DeepAnalytics,Jeffrey Brown,Principal Engineer,Distributed Systems,1,44,2020,Microsoft
+DeepAnalytics,Heather Martin,CTO,Algorithms,1,11,2020,Apple
+DeepAnalytics,Joseph Lopez,Senior Engineer,Distributed Systems,5,10,2021,Amazon
+DeepAnalytics,Christine Wright,Staff Engineer,Data Processing,3,15,2018,Apple
+DeepAnalytics,Victoria Simpson,Principal Engineer,Networking,5,35,2024,Microsoft
+DeepAnalytics,Megan Anderson,Principal Engineer,Networking,4,22,2020,Amazon
+DeepAnalytics,Joshua Taylor,CTO,Distributed Systems,3,21,2024,Apple
+DeepAnalytics,Nathaniel Santos,Principal Engineer,Algorithms,2,19,2023,Apple
+NextDynamics,Brenda Dawson,Senior Engineer,Hardware,3,39,2018,Amazon
+NextDynamics,Ashley Gutierrez,Staff Engineer,Hardware,5,15,2024,Apple
+AISolutions,Mariah Vaughan,Principal Engineer,Networking,4,18,2019,Microsoft
+AISolutions,Amanda Soto,Principal Engineer,Data Processing,3,1,2022,Microsoft
+NeuralDynamics,Chelsey Lozano,Staff Engineer,Distributed Systems,2,3,2022,Apple
+NeuralSystems,Cindy Paul,CTO,Distributed Systems,5,46,2021,Meta
+NeuralSystems,Michelle Torres,Principal Engineer,Machine Learning,2,10,2018,Google
+NeuralSystems,Sophia Harris,CTO,Distributed Systems,1,44,2019,Google
+NeuralSystems,Amanda Stanley,CTO,Hardware,1,30,2020,Apple
+NeuralSystems,Tracy Burns,Principal Engineer,Distributed Systems,3,40,2023,Amazon
+NeuralSystems,Patrick Jones,Principal Engineer,Security,4,37,2019,Meta
+NeuralSystems,Richard Camacho,Senior Engineer,Distributed Systems,1,2,2020,Apple
+NeuralSystems,John Williams,CTO,Hardware,3,24,2018,Meta
+DataAnalytics,Lisa Collins,Staff Engineer,Networking,1,1,2019,Apple
+NextVentures,Becky Ortiz,Senior Engineer,Distributed Systems,1,13,2023,Amazon
+NextVentures,Luis Lopez,Principal Engineer,Hardware,4,22,2022,Microsoft
+NextVentures,Kiara White,CTO,Distributed Systems,3,37,2020,Amazon
+NextVentures,Gregory Stephens,Senior Engineer,Networking,4,5,2022,Microsoft
+NextVentures,Tyler Ruiz,Staff Engineer,Machine Learning,3,45,2020,Microsoft
+TechSystems,Jared Rose,Principal Engineer,Distributed Systems,3,44,2020,Amazon
+TechSystems,Brandy Perez,CTO,Distributed Systems,1,4,2019,Microsoft
+TechSystems,Juan Hart,Principal Engineer,Machine Learning,2,18,2019,Meta
+TechSystems,Phyllis Mcneil,CTO,Distributed Systems,2,2,2024,Meta
+TechSystems,Maria Gardner,Staff Engineer,Security,4,18,2019,Apple
+TechSystems,Jennifer Schaefer,CTO,Distributed Systems,1,1,2020,Meta
+NextWorks,Ms. Jennifer Huynh PhD,CTO,Algorithms,5,26,2022,Amazon
+QuantumDynamics,Donna Castro,Senior Engineer,Machine Learning,5,50,2023,Apple
+QuantumDynamics,Barbara Russell,Staff Engineer,Networking,3,24,2024,Microsoft
+QuantumDynamics,Kyle Day,Senior Engineer,Distributed Systems,1,41,2023,Amazon
+QuantumDynamics,Lisa Warren,CTO,Security,1,29,2020,Meta
+QuantumDynamics,Charlotte Holder,Senior Engineer,Security,2,20,2018,Meta
+QuantumDynamics,Michael Walker,Staff Engineer,Networking,3,3,2019,Meta
+QuantumDynamics,Jose Young,Principal Engineer,Data Processing,4,21,2019,Amazon
+QuantumDynamics,Sally Brown,Principal Engineer,Algorithms,2,12,2019,Meta
+QuantumDynamics,James Vega,Staff Engineer,Networking,2,0,2019,Google
+QuantumDynamics,Hunter Parker,Staff Engineer,Security,4,36,2018,Meta
+QuantumDynamics,Emily Robinson,Staff Engineer,Machine Learning,2,1,2019,Meta
+AIAnalytics,Dana Webster,Principal Engineer,Data Processing,4,28,2018,Google
+NeuralSolutions,Vincent Lewis,CTO,Hardware,4,23,2024,Google
+SmartSystems,Lisa Wilson,CTO,Hardware,4,9,2024,Amazon
+SmartSystems,Anne Mccoy,Principal Engineer,Hardware,3,15,2023,Google
+SmartSystems,Christina Stewart,Staff Engineer,Security,3,13,2018,Google
+SmartSystems,Patrick Wilson,Staff Engineer,Distributed Systems,5,35,2024,Apple
+SmartSystems,Meredith Bryant,CTO,Distributed Systems,2,1,2019,Apple
+SmartSystems,Jeffrey Marshall,Staff Engineer,Machine Learning,2,34,2020,Amazon
+SmartSystems,Patricia Jackson,Senior Engineer,Hardware,5,47,2024,Google
+SmartSystems,Cynthia Miles,Senior Engineer,Data Processing,2,10,2023,Meta
+SmartSystems,Michelle Macias,Principal Engineer,Machine Learning,3,3,2021,Amazon
+SmartSystems,Devin Hopkins,Principal Engineer,Algorithms,5,29,2023,Google
+AISystems,Natalie Gross,CTO,Algorithms,4,20,2024,Apple
+AISystems,Brian Smith,CTO,Machine Learning,5,50,2024,Microsoft
+NeuralVentures,Heather Wallace,Staff Engineer,Security,1,24,2020,Microsoft
+NeuralVentures,Jenna Tran,Staff Engineer,Networking,4,9,2024,Amazon
+NeuralVentures,Wesley Carroll,Staff Engineer,Security,5,4,2019,Meta
+CloudTechnologies,Matthew Carr,Principal Engineer,Networking,1,37,2024,Apple
+CloudLabs,Dawn Hayes,CTO,Data Processing,5,18,2023,Apple
+CloudLabs,Fred Espinoza,Staff Engineer,Distributed Systems,4,15,2023,Meta
+CloudLabs,Kathleen Rose,CTO,Networking,1,50,2019,Google
+DataWorks,Christina Foster,Staff Engineer,Machine Learning,1,3,2018,Microsoft
+AIDynamics,Brian Lang,CTO,Networking,1,15,2023,Apple
+AIDynamics,Sandra Riggs DDS,CTO,Hardware,5,3,2023,Google
+DataDynamics,Charles Roberts,CTO,Hardware,1,31,2020,Google
+DeepTechnologies,Lisa Kelly,Staff Engineer,Networking,2,22,2018,Microsoft
+DeepTechnologies,David Harris,Principal Engineer,Algorithms,3,11,2022,Apple
+DataVentures,Vincent Williamson,Senior Engineer,Data Processing,1,11,2019,Meta
+TechLabs,Donald Brown,CTO,Data Processing,3,15,2019,Microsoft
+TechLabs,Samantha Wells,CTO,Distributed Systems,2,1,2020,Apple
+TechLabs,Frances Gibson,Staff Engineer,Distributed Systems,1,24,2019,Amazon
+CloudLabs,Cynthia Wiggins,Principal Engineer,Algorithms,3,37,2023,Amazon
+CloudLabs,Michael Moss,Staff Engineer,Distributed Systems,1,44,2022,Meta
+CloudLabs,Caleb Farmer,Staff Engineer,Security,3,19,2021,Google
+CloudLabs,Ian Waller,Principal Engineer,Networking,5,31,2022,Microsoft
+MetaWorks,James Parrish,Principal Engineer,Machine Learning,3,29,2018,Meta
+MetaWorks,Ryan Franklin,Senior Engineer,Hardware,3,39,2023,Amazon
+MetaWorks,Sean Collins,Principal Engineer,Machine Learning,5,49,2024,Apple
+MetaWorks,Mason Dunn,Staff Engineer,Hardware,4,31,2020,Microsoft
+MetaLabs,Craig Mcclure,Staff Engineer,Data Processing,4,40,2023,Meta
+MetaLabs,Mark Atkinson,Staff Engineer,Networking,3,26,2019,Apple
+MetaLabs,Shawn Ashley,Staff Engineer,Data Processing,4,30,2020,Meta
+MetaLabs,Kyle Davenport,Staff Engineer,Security,5,9,2018,Amazon
+DeepSolutions,Keith Wells,Senior Engineer,Data Processing,3,34,2018,Meta
+DeepSolutions,Gregory Hawkins,Staff Engineer,Machine Learning,3,36,2023,Meta
+DeepSolutions,Amy Willis,Staff Engineer,Networking,3,7,2018,Apple
+AIWorks,David Taylor,CTO,Distributed Systems,1,9,2022,Apple
+AIWorks,Michelle Brown,Principal Engineer,Hardware,5,25,2019,Amazon
+AIWorks,Scott Austin,Staff Engineer,Data Processing,2,41,2021,Meta
+AIWorks,Michael Knox,Principal Engineer,Algorithms,2,2,2021,Amazon
+AIWorks,Kimberly Hansen,Senior Engineer,Security,3,39,2022,Google
+AIWorks,Darius Henson,Principal Engineer,Machine Learning,2,13,2023,Google
+AIWorks,Deborah Cabrera,Staff Engineer,Algorithms,5,48,2024,Google
+AIWorks,William Ramirez,Senior Engineer,Security,5,34,2024,Meta
+AIWorks,Heather Allen,Staff Engineer,Machine Learning,1,11,2024,Meta
+AIWorks,Brian Curtis,Senior Engineer,Hardware,2,50,2018,Apple
+AIWorks,Steven Wood,Principal Engineer,Networking,1,45,2020,Microsoft
+AIWorks,Kayla Anderson,Staff Engineer,Hardware,4,34,2021,Microsoft
+AIWorks,Rebecca Glass,CTO,Data Processing,3,0,2018,Microsoft
+AIWorks,Daniel Green,Senior Engineer,Networking,3,16,2022,Microsoft
+NeuralSystems,Greg Valdez,Senior Engineer,Data Processing,3,19,2024,Meta
+NeuralSystems,Linda Ali,Senior Engineer,Machine Learning,4,11,2022,Microsoft
+NeuralSystems,Brian Archer,CTO,Data Processing,5,30,2019,Apple
+NeuralSystems,Victor Schultz,Principal Engineer,Hardware,4,40,2021,Apple
+SmartSystems,Steven Montgomery,CTO,Algorithms,3,49,2023,Google
+TechTechnologies,Andrew Perry,CTO,Algorithms,2,13,2020,Meta
+TechTechnologies,Jody Curry,Senior Engineer,Networking,2,45,2021,Meta
+TechTechnologies,Richard Pierce,Staff Engineer,Machine Learning,2,11,2018,Apple
+TechTechnologies,Carl Byrd,Senior Engineer,Machine Learning,3,10,2022,Apple
+TechTechnologies,Kevin Schmidt,Staff Engineer,Hardware,1,18,2023,Amazon
+TechTechnologies,Lauren Hernandez,Senior Engineer,Machine Learning,4,39,2021,Meta
+TechTechnologies,Amanda Thomas,CTO,Networking,5,38,2022,Apple
+TechTechnologies,Kara Lopez,Senior Engineer,Algorithms,2,32,2023,Meta
+TechTechnologies,Kristen Ferguson,Senior Engineer,Algorithms,5,1,2018,Meta
+TechTechnologies,Jacqueline Page,CTO,Data Processing,4,1,2023,Meta
+TechTechnologies,David Jones DVM,Senior Engineer,Machine Learning,1,22,2019,Meta
+TechTechnologies,Kara Wright,Principal Engineer,Distributed Systems,5,25,2019,Google
+TechTechnologies,Stephanie Brown,Senior Engineer,Security,1,20,2024,Meta
+TechTechnologies,Mrs. Gina Freeman,Principal Engineer,Distributed Systems,5,15,2022,Google
+SmartSolutions,Kelly Davila,Principal Engineer,Networking,2,26,2024,Microsoft
+SmartSolutions,Wendy Baker,Staff Engineer,Algorithms,5,49,2022,Google
+SmartSolutions,Laura Stephenson,Senior Engineer,Data Processing,4,34,2023,Amazon
+NextAnalytics,Samantha Bowen,Staff Engineer,Hardware,4,48,2021,Meta
+NextAnalytics,John Evans,Staff Engineer,Distributed Systems,5,13,2024,Microsoft
+NextAnalytics,Natalie Stephens,CTO,Algorithms,2,13,2024,Amazon
+DataDynamics,Omar Hensley,CTO,Algorithms,1,32,2020,Google
+DeepTechnologies,Ryan Becker,CTO,Distributed Systems,4,29,2018,Meta
+DeepTechnologies,Michael Stone,CTO,Networking,3,49,2018,Google
+DeepTechnologies,Colleen Byrd MD,Senior Engineer,Distributed Systems,2,42,2022,Meta
+DeepTechnologies,Monique Davis,Staff Engineer,Distributed Systems,5,9,2018,Microsoft
+DeepTechnologies,Richard King,Staff Engineer,Security,2,29,2023,Microsoft
+DeepTechnologies,Jason Harris,Senior Engineer,Networking,4,20,2023,Google
+DeepTechnologies,Frank Russell,CTO,Data Processing,4,24,2018,Google
+DeepTechnologies,Anthony Stokes,CTO,Hardware,3,37,2019,Google
+DeepTechnologies,Chad Woods,Senior Engineer,Hardware,3,15,2024,Google
+DeepTechnologies,Mallory Flores,Staff Engineer,Data Processing,5,28,2021,Google
+DeepTechnologies,Ashley Kerr,CTO,Networking,1,22,2022,Amazon
+DeepTechnologies,Sherry Clark,Staff Engineer,Networking,3,22,2023,Amazon
+DeepTechnologies,Tracy Wheeler,Staff Engineer,Algorithms,1,45,2024,Meta
+DeepTechnologies,Amanda Parker,CTO,Data Processing,3,44,2024,Amazon
+NextVentures,Benjamin Mitchell,CTO,Hardware,2,39,2024,Apple
+DeepVentures,Michael Rodriguez,Senior Engineer,Distributed Systems,3,28,2019,Apple
+DeepVentures,Dennis Osborne,Staff Engineer,Security,3,14,2022,Apple
+DeepVentures,Jill Gordon,CTO,Algorithms,1,48,2021,Apple
+TechDynamics,Patrick Li,Staff Engineer,Networking,5,1,2021,Apple
+TechDynamics,Andrea Downs,CTO,Distributed Systems,5,26,2021,Microsoft
+TechDynamics,Grace Duffy,Principal Engineer,Machine Learning,4,36,2022,Amazon
+TechDynamics,Sandra Ross,CTO,Machine Learning,5,0,2022,Microsoft
+TechDynamics,Alexander Thomas,CTO,Security,4,16,2022,Apple
+TechDynamics,Taylor Ray,Principal Engineer,Data Processing,3,4,2022,Meta
+TechDynamics,Brandon Sellers,Principal Engineer,Machine Learning,4,29,2019,Apple
+TechDynamics,Nicole Berger,CTO,Networking,3,13,2021,Microsoft
+TechDynamics,Susan Wallace,Senior Engineer,Data Processing,3,49,2022,Microsoft
+TechDynamics,Thomas Turner,Senior Engineer,Security,3,20,2018,Microsoft
+CloudSolutions,Miranda Myers,Staff Engineer,Algorithms,5,25,2018,Apple
+CloudSolutions,Michael Dunn,Staff Engineer,Machine Learning,1,10,2021,Meta
+CloudSolutions,Shannon Bradley,CTO,Machine Learning,4,25,2020,Microsoft
+CloudSolutions,Sydney Horne,Senior Engineer,Machine Learning,5,11,2020,Microsoft
+CloudSolutions,Amanda Powell,Principal Engineer,Security,5,6,2024,Meta
+NextSystems,Cheryl Guerrero,Senior Engineer,Networking,5,36,2022,Meta
+NextSystems,Katie Roberts,Senior Engineer,Security,4,19,2023,Microsoft
+NextSystems,Craig Johnson,Staff Engineer,Networking,5,47,2021,Apple
+NeuralSolutions,Mark Thomas,Senior Engineer,Networking,3,26,2024,Meta
+NeuralSolutions,Jessica Stewart,Senior Engineer,Distributed Systems,4,50,2020,Google
+NeuralSolutions,Michael Kaufman,Senior Engineer,Machine Learning,2,2,2023,Apple
+NeuralSolutions,Michael Gallegos,CTO,Hardware,4,6,2022,Microsoft
+NeuralSolutions,Tanya Olson,Principal Engineer,Algorithms,2,1,2020,Amazon
+NeuralSolutions,Karen Walker,Principal Engineer,Machine Learning,5,16,2024,Microsoft
+NeuralSolutions,Brandi Cameron,Staff Engineer,Hardware,4,34,2023,Apple
+NeuralSolutions,Belinda Stone,CTO,Data Processing,5,3,2022,Amazon
+NeuralSolutions,Samantha Jensen,Senior Engineer,Algorithms,1,33,2021,Meta
+NeuralSolutions,Christopher Flowers,CTO,Algorithms,1,1,2018,Meta
+NeuralSolutions,Tracy Rogers,CTO,Security,1,3,2019,Apple
+NeuralSolutions,Theresa Campos,Principal Engineer,Security,3,8,2022,Microsoft
+NeuralSolutions,Gabriel Marshall,Senior Engineer,Data Processing,4,17,2023,Apple
+NeuralSolutions,Jeremiah Kirk,CTO,Networking,4,23,2019,Apple
+NeuralSolutions,Aaron Shelton,Senior Engineer,Data Processing,2,50,2024,Meta
+AISystems,Brandon Murray,Senior Engineer,Security,3,39,2022,Amazon
+AISystems,Laura Smith,CTO,Distributed Systems,3,27,2024,Meta
+AISystems,Jennifer Bailey,Staff Engineer,Hardware,2,7,2022,Google
+AISystems,Chad Huff,Principal Engineer,Distributed Systems,2,40,2023,Apple
+AISystems,Monica Frank,CTO,Hardware,1,16,2021,Apple
+AISystems,Linda Greene,CTO,Data Processing,3,34,2020,Apple
+NextWorks,Brian Tucker,Principal Engineer,Networking,2,38,2021,Apple
+DataTechnologies,Ashley Murray,Staff Engineer,Machine Learning,2,34,2019,Apple
+DataTechnologies,Donna Randall,Senior Engineer,Data Processing,1,8,2020,Apple
+DataTechnologies,Shannon Wilson,Principal Engineer,Distributed Systems,1,10,2023,Microsoft
+DataTechnologies,Evelyn Smith,Senior Engineer,Machine Learning,2,25,2019,Meta
+DataTechnologies,Dr. Angela Lynch,Senior Engineer,Hardware,1,45,2024,Amazon
+DataTechnologies,Maria Castro,Staff Engineer,Hardware,2,40,2021,Amazon
+DataTechnologies,Chris Mccormick,Staff Engineer,Data Processing,3,34,2023,Microsoft
+DataTechnologies,Nancy Fowler,Staff Engineer,Networking,3,35,2020,Apple
+DataTechnologies,Brittany Church MD,Principal Engineer,Distributed Systems,2,37,2023,Apple
+DataTechnologies,Carrie Horne,Staff Engineer,Algorithms,3,8,2023,Apple
+DataTechnologies,Daniel Boyle,Senior Engineer,Data Processing,1,32,2020,Amazon
+DataTechnologies,Michelle Abbott,Principal Engineer,Networking,1,28,2018,Google
+QuantumWorks,Leslie Alexander,Principal Engineer,Machine Learning,5,40,2018,Apple
+QuantumWorks,Chad Griffin,Principal Engineer,Networking,1,16,2021,Amazon
+AISystems,Tim Mcmahon,Principal Engineer,Security,4,14,2024,Apple
+AISystems,Elizabeth Holmes,Staff Engineer,Security,2,19,2021,Microsoft
+AISystems,Alison Soto,Principal Engineer,Machine Learning,4,7,2020,Microsoft
+AISystems,Mia Hamilton,Principal Engineer,Algorithms,5,29,2019,Apple
+AISystems,Julie Montgomery,Principal Engineer,Hardware,5,13,2018,Apple
+AISystems,Karl Ramos,Staff Engineer,Data Processing,5,34,2018,Meta
+AISystems,Alex Fletcher,Staff Engineer,Machine Learning,5,13,2021,Google
+AISystems,Jeffery Guzman,Senior Engineer,Algorithms,2,15,2024,Microsoft
+AISystems,Nicole Barrett,Staff Engineer,Data Processing,1,32,2021,Microsoft
+AISystems,Terry May,Staff Engineer,Hardware,5,4,2020,Meta
+AISystems,Colleen Nguyen,CTO,Networking,4,12,2018,Apple
+DeepSystems,David Huerta,CTO,Distributed Systems,3,43,2018,Apple
+DeepSystems,Julia Jackson,Staff Engineer,Machine Learning,4,44,2020,Amazon
+DeepSystems,Jacob Taylor,Principal Engineer,Hardware,2,20,2023,Meta
+DeepSystems,Marilyn Green,CTO,Hardware,5,3,2018,Microsoft
+DeepSystems,Diane Simon,Senior Engineer,Security,4,43,2021,Meta
+DeepSystems,Sandra Ward,Principal Engineer,Security,4,31,2018,Amazon
+DeepSystems,Brady Thompson,CTO,Algorithms,4,10,2022,Amazon
+SmartDynamics,Julie Norton,Senior Engineer,Security,2,13,2024,Amazon
+SmartDynamics,Kelly Brooks,Staff Engineer,Networking,5,36,2020,Amazon
+TechDynamics,Cynthia Evans,CTO,Security,3,3,2022,Microsoft

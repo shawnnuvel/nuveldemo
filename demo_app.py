@@ -1,6 +1,6 @@
 """
 Nuvel.ai Demo Platform - Technical & IP Diligence
-Save as: app.py
+Fixed version
 """
 
 import streamlit as st
@@ -76,16 +76,20 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-# Load synthetic data (would come from your data generator script)
+# Fixed: Simplified cache decorator
 @st.cache_data
 def load_demo_data():
-    # This would load from your generated JSON/CSV files
+    """Load demo data from CSV files"""
     try:
+        companies = pd.read_csv('synthetic_companies.csv')
+        stealth = pd.read_csv('synthetic_stealth.csv')
+        patents = pd.read_csv('synthetic_patents.csv')
+        patterns = pd.read_csv('synthetic_patterns.csv')
         return {
-            'companies': pd.read_csv('synthetic_companies.csv'),
-            'stealth': pd.read_csv('synthetic_stealth.csv'),
-            'patents': pd.read_csv('synthetic_patents.csv'),
-            'patterns': pd.read_csv('synthetic_patterns.csv')
+            'companies': companies,
+            'stealth': stealth,
+            'patents': patents,
+            'patterns': patterns
         }
     except:
         # Return empty dataframes if files don't exist
@@ -230,13 +234,21 @@ if st.session_state.analysis_run and st.session_state.selected_company:
             fig.update_traces(textposition='inside', textinfo='percent+label')
             st.plotly_chart(fig, use_container_width=True)
             
-            # Historical hiring chart
+            # Fixed: Engineering Hiring Velocity with explicit date creation
             st.markdown("#### Engineering Hiring Velocity")
             
+            # Create dates and values explicitly to ensure matching lengths
             dates = pd.date_range(start='2022-01-01', end='2024-01-01', freq='Q')
+            engineers = [20, 25, 32, 41, 52, 67, 78, 89, 102]
+            
+            # Ensure we have the right number of values
+            if len(dates) != len(engineers):
+                # Adjust engineers list to match dates length
+                engineers = engineers[:len(dates)]
+            
             eng_growth = pd.DataFrame({
                 'Date': dates,
-                'Engineers': [20, 25, 32, 41, 52, 67, 78, 89, 102]
+                'Engineers': engineers
             })
             
             fig = px.line(eng_growth, x='Date', y='Engineers', 
@@ -372,23 +384,8 @@ if st.session_state.analysis_run and st.session_state.selected_company:
                 'Status': ['Stealth', 'Stealth', 'Launched', 'Stealth', 'Raised Seed']
             })
             
-            # Add LinkedIn tracking buttons
-            for idx, row in stealth_data.iterrows():
-                col1, col2, col3, col4, col5 = st.columns([2, 2, 1, 1, 1])
-                with col1:
-                    st.text(row['Profile'])
-                with col2:
-                    st.text(row['Previous Role'])
-                with col3:
-                    st.text(row['Transition'])
-                with col4:
-                    if row['Status'] == 'Stealth':
-                        st.markdown(f"<span class='stealth-badge'>{row['Status']}</span>", 
-                                  unsafe_allow_html=True)
-                    else:
-                        st.success(row['Status'])
-                with col5:
-                    st.button("Track", key=f"track_{idx}")
+            # Display stealth data in a cleaner way
+            st.dataframe(stealth_data, hide_index=True, use_container_width=True)
             
             # Geographic distribution
             st.markdown("#### Geographic Distribution of Stealth Activity")
